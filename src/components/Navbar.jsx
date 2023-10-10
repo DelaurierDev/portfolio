@@ -15,11 +15,11 @@ const Navbar = () => {
         {/*Menu*/}
 
             <ul className='hidden md:flex'>
-                <li>Home</li>
-                <li>About</li>
-                <li>Skills</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li className='hover:text-blue-600 duration-300'>Home</li>
+                <li className='hover:text-blue-600 duration-300'>About</li>
+                <li className='hover:text-blue-600 duration-300'>Skills</li>
+                <li className='hover:text-blue-600 duration-300'>Projects</li>
+                <li className='hover:text-blue-600 duration-300'>Contact</li>
             </ul>
 
 
