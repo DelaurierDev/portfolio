@@ -3,6 +3,11 @@ import HTML from '../assets/html.png'
 import CSS from '../assets/css.png'
 import JavaScript from '../assets/javascript.png'
 import ReactImg from '../assets/react.png'
+import PythonImg from '../assets/pythonicon.png'
+import Java from '../assets/java.png'
+import Flask from '../assets/flask.png'
+import Mongo from '../assets/mongo.png'
+import Github from '../assets/github.png'
 
 const Skills = () => {
   return (
@@ -28,6 +33,26 @@ const Skills = () => {
                 <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                     <img src={ReactImg} alt="React Icon" className='w-20 mx-auto'/>
                     <p className='my-4'>React</p>
+                </div>
+                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                    <img src={PythonImg} alt="Python Icon" className='w-20 mx-auto'/>
+                    <p className='my-4'>Python</p>
+                </div>
+                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                    <img src={Java} alt="Java Icon" className='w-20 mx-auto'/>
+                    <p className='my-4'>Java</p>
+                </div>
+                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                    <img src={Flask} alt="Flask Icon" className='w-20 mx-auto'/>
+                    <p className='my-4'>Flask</p>
+                </div>
+                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                    <img src={Mongo} alt="Mongodb Icon" className='w-20 mx-auto'/>
+                    <p className='my-4'>MongoDB</p>
+                </div>
+                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                    <img src={Github} alt="Github Icon" className='w-20 mx-auto'/>
+                    <p className='my-4'>Github</p>
                 </div>
             </div>
         </div>
