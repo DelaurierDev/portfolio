@@ -3,6 +3,7 @@ import Logo from '../assets/logo.png'
 import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
+import {Link} from 'react-scroll'
 const Navbar = () => {
     const [nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
@@ -15,11 +16,11 @@ const Navbar = () => {
         {/*Menu*/}
 
             <ul className='hidden md:flex'>
-                <li className='hover:text-blue-600 duration-300'>Home</li>
-                <li className='hover:text-blue-600 duration-300'>About</li>
-                <li className='hover:text-blue-600 duration-300'>Skills</li>
-                <li className='hover:text-blue-600 duration-300'>Projects</li>
-                <li className='hover:text-blue-600 duration-300'>Contact</li>
+                <Link to="home" smooth={true} duration={500} className='hover:text-blue-600 duration-300 px-4 cursor-pointer'>Home</Link>
+                <Link to="about" smooth={true} duration={500} className='hover:text-blue-600 duration-300 px-4 cursor-pointer'>About</Link>
+                <Link to="skills" smooth={true} duration={500} className='hover:text-blue-600 duration-300 px-4 cursor-pointer'>Skills</Link>
+                <Link to="work" smooth={true} duration={500} className='hover:text-blue-600 duration-300 px-4 cursor-pointer'>Projects</Link>
+                <Link to="contact" smooth={true} duration={500} className='hover:text-blue-600 duration-300 px-4 cursor-pointer'>Contact</Link>
             </ul>
 
 
@@ -29,11 +30,11 @@ const Navbar = () => {
         </div>
         {/*Mobile Menu*/}
         <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
-                <li className='py-6 text-4xl'>Home</li>
-                <li className='py-6 text-4xl'>About</li>
-                <li className='py-6 text-4xl'>Skills</li>
-                <li className='py-6 text-4xl'>Projects</li>
-                <li className='py-6 text-4xl'>Contact</li>
+                <Link onClick={handleClick}to="home" smooth={true} duration={500} className='py-6 text-4xl cursor-pointer'>Home</Link>
+                <Link onClick={handleClick}to="about" smooth={true} duration={500} className='py-6 text-4xl cursor-pointer'>About</Link>
+                <Link onClick={handleClick}to="skills" smooth={true} duration={500} className='py-6 text-4xl cursor-pointer'>Skills</Link>
+                <Link onClick={handleClick}to="work" smooth={true} duration={500} className='py-6 text-4xl cursor-pointer'>Projects</Link>
+                <Link onClick={handleClick}to="contact" smooth={true} duration={500} className='py-6 text-4xl cursor-pointer'>Contact</Link>
         </ul>
 
 
@@ -50,7 +51,7 @@ const Navbar = () => {
                 </li>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
                     <a className='flex justify-between items-center text-gray-300'
-                    href="">Email </a><HiOutlineMail size={30}/>
+                    href="mailto:delaurier4@gmail.com">Email </a><HiOutlineMail size={30}/>
                 </li>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565F69]'>
                     <a className='flex justify-between items-center text-gray-300'
